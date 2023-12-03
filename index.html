@@ -7,11 +7,20 @@
     <title>Pomodoro Timer</title>
   </head>
   <body>
-    <div class="timer-container">
-      <div id="timer">25:00</div>
-      <button onclick="startTimer()">Start</button>
-      <button onclick="pauseTimer()">Pause</button>
-      <button onclick="resetTimer()">Reset</button>
+    <div class="app-container">
+      <div class="break-buttons">
+        <button class="break-button" onclick="setDuration(1500)">Pomodoro</button>
+        <button class="break-button" onclick="setDuration(300)">Short Break</button>
+        <button class="break-button" onclick="setDuration(600)">Long Break</button>
+      </div>
+
+      <div class="timer-container">
+        <div id="timer">25:00</div>
+      </div>
+
+      <div class="control-buttons">
+        <button id="timerButton" onclick="startPauseTimer()">Start</button>
+      </div>
     </div>
 
     <script src="script.js"></script>
